@@ -28,7 +28,7 @@ void draw()
 {
   //if ( myPort.available() > 0) {  
     // If data is available,
-    //println(val);
+    
     val = myPort.read();         // read it and store it in val
     time = hour() + ":" +  minute() + ":" + second();
     //int foo = Integer.parseInt(val);
@@ -36,34 +36,41 @@ void draw()
       OscMessage myMessage_1 = new OscMessage(1);
       myMessage_1.add(1); // add an int to the osc message
       oscP5.send(myMessage_1, myRemoteLocation); // send the message
-      println(time + " 1 sent");
+      println(time + " 1 touch");
     } 
-    if (my_touch && val == 50) {
+    if (val == 50) {
       OscMessage myMessage_2 = new OscMessage(2);
       myMessage_2.add(2); // add an int to the osc message
       oscP5.send(myMessage_2, myRemoteLocation); // send the message
-      println(time + " 2 sent");
-      my_touch = false;
+      println(time + " 2 touch");
     } 
-    if (my_touch && val == 51) {
+    if (val == 51) {
       OscMessage myMessage_3 = new OscMessage(3);
       myMessage_3.add(3); // add an int to the osc message
       oscP5.send(myMessage_3, myRemoteLocation); // send the message
-      println(time + " 3 sent");
-      my_touch = false;
+      println(time + " 3 touch");
     } 
     
     
-    if (!my_touch && val == 1047) {
-      //OscMessage myMessage_2 = new OscMessage(999);
-      //myMessage_2.add(999); // add an int to the osc message
-      //oscP5.send(myMessage_2, myRemoteLocation); // send the message  
-      //println(time + " 999 sent");
-      OscMessage myMessage_3 = new OscMessage(1);
-      myMessage_3.add(1); // add an int to the osc message
-      oscP5.send(myMessage_3, myRemoteLocation); // send the message  
-      println(time + " off 1 sent");
-      my_touch = true;
+    if (val == 97) {
+      OscMessage myMessage_91 = new OscMessage(91);
+      myMessage_91.add(91); // add an int to the osc message
+      oscP5.send(myMessage_91, myRemoteLocation); // send the message  
+      println(time + " 1 released");
     }
-  //println(time + " " + val); //print it out in the console
+    if (val == 98) {
+      OscMessage myMessage_92 = new OscMessage(92);
+      myMessage_92.add(92); // add an int to the osc message
+      oscP5.send(myMessage_92, myRemoteLocation); // send the message  
+      println(time + " 2 released");
+    }
+    if (val == 99 ) {
+      OscMessage myMessage_93 = new OscMessage(93);
+      myMessage_93.add(93); // add an int to the osc message
+      oscP5.send(myMessage_93, myRemoteLocation); // send the message  
+      println(time + " 3 released");
+    }
+  if (val != -1 ){
+    println(time + " " + val); //print it out in the console
+  }
 }
