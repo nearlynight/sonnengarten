@@ -16,6 +16,7 @@ BSD license, all text above must be included in any redistribution
 **********************************************************/
 
 #include <Wire.h>
+
 #include "Adafruit_MPR121.h"
 
 // You can have up to 4 on one i2c bus but one is enough for testing!
@@ -53,7 +54,7 @@ int value_9 = 100;
 
 int value_off_1 = 87;
 int value_off_2 = 111;
-int value_off_3 = 130;
+int value_off_3 = 127;
 
 void loop() {
   // Get the currently touched pads
@@ -79,15 +80,15 @@ void loop() {
   
   // detect it no touch
   if(one_is_touched && cap.baselineData(1) > value_off_1) {
-    Serial.print(999);
+    Serial.print("a");
     one_is_touched = false;
   }
   if(two_is_touched && cap.baselineData(2) > value_off_2) {
-    Serial.print(999);
+    Serial.print("b");
     two_is_touched = false;
   }
   if(three_is_touched && cap.baselineData(3) > value_off_3) {
-    Serial.print(999);
+    Serial.print("c");
     three_is_touched = false;
   }
 
@@ -97,11 +98,11 @@ void loop() {
   for (uint8_t i=0; i<12; i++) {
     // it if *is* touched and *wasnt* touched before, alert!
     if ((currtouched & _BV(i)) && !(lasttouched & _BV(i)) ) {
-      Serial.print(i); Serial.println(" touched");
+      //Serial.print(i); Serial.println(" touched");
     }
     // if it *was* touched and now *isnt*, alert!
     if (!(currtouched & _BV(i)) && (lasttouched & _BV(i)) ) {
-      Serial.print(i); Serial.println(" released");
+      //Serial.print(i); Serial.println(" released");
     }
   }
 
@@ -112,17 +113,17 @@ void loop() {
   return;
   
   // debugging info, what
-  Serial.print("\t\t\t\t\t\t\t\t\t\t\t\t\t 0x"); Serial.println(cap.touched(), HEX);
-  Serial.print("Filt: ");
+  //Serial.print("\t\t\t\t\t\t\t\t\t\t\t\t\t 0x"); Serial.println(cap.touched(), HEX);
+  //Serial.print("Filt: ");
   for (uint8_t i=0; i<12; i++) {
-    Serial.print(cap.filteredData(i)); Serial.print("\t");
+    //Serial.print(cap.filteredData(i)); Serial.print("\t");
   }
-  Serial.println();
-  Serial.print("Base: ");
+  //Serial.println();
+  //Serial.print("Base: ");
   for (uint8_t i=0; i<12; i++) {
-    Serial.print(cap.baselineData(i)); Serial.print("\t");
+    //Serial.print(cap.baselineData(i)); Serial.print("\t");
   }
-  Serial.println();
+  //Serial.println();
   
   // put a delay so it isn't overwhelming
   delay(100);
