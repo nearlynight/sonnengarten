@@ -32,26 +32,44 @@ void draw()
     val = myPort.read();         // read it and store it in val
     time = hour() + ":" +  minute() + ":" + second();
     //int foo = Integer.parseInt(val);
+    
+    OscMessage myMessage_1 = new OscMessage(1);
+    
     if (val == 49) {
-      OscMessage myMessage_1 = new OscMessage(1);
-      myMessage_1.add(1); // add an int to the osc message
-      oscP5.send(myMessage_1, myRemoteLocation); // send the message
+      OscMessage m = new OscMessage("/touch/1");
+      int a = 1;
+      //m = new OscMessage(a);
+      m.add(a);
+      oscP5.send(m,myRemoteLocation);  
+      
+      //myMessage_1.add("/0/dmx/0"); // add an int to the osc message
+      //oscP5.send(myMessage_1, myRemoteLocation); // send the message
       println(time + " 1 touch");
     } 
     if (val == 50) {
-      OscMessage myMessage_2 = new OscMessage(2);
-      myMessage_2.add(2); // add an int to the osc message
-      oscP5.send(myMessage_2, myRemoteLocation); // send the message
+      OscMessage m = new OscMessage("/touch/2");
+      int b = 2;
+      m.add(b);
+      
+      oscP5.send(m,myRemoteLocation); 
+      
+      //myMessage_1.add("/0/dmx/1"); // add an int to the osc message
+      //oscP5.send(myMessage_1, myRemoteLocation); // send the message
       println(time + " 2 touch");
     } 
     if (val == 51) {
-      OscMessage myMessage_3 = new OscMessage(3);
-      myMessage_3.add(3); // add an int to the osc message
-      oscP5.send(myMessage_3, myRemoteLocation); // send the message
+      OscMessage m = new OscMessage("/touch/3");
+      int c = 3;
+      //m = new OscMessage(a);
+      m.add(c);
+      
+      oscP5.send(m,myRemoteLocation); 
+      
+      //myMessage_1.add("/0/dmx/2"); // add an int to the osc message
+      //oscP5.send(myMessage_1, myRemoteLocation); // send the message
       println(time + " 3 touch");
     } 
-    
-    
+       
     if (val == 97) {
       OscMessage myMessage_91 = new OscMessage(91);
       myMessage_91.add(91); // add an int to the osc message
@@ -70,7 +88,7 @@ void draw()
       oscP5.send(myMessage_93, myRemoteLocation); // send the message  
       println(time + " 3 released");
     }
-  if (val != -1 ){
-    println(time + " " + val); //print it out in the console
-  }
+  //if (val != -1 ){
+  //  println(time + " " + val); //print it out in the console
+  //}
 }
