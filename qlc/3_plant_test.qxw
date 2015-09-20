@@ -47,7 +47,7 @@
    <Step Number="1" FadeOut="0" FadeIn="0" Hold="0">1</Step>
    <Step Number="2" FadeOut="0" FadeIn="0" Hold="0">2</Step>
   </Function>
-  <Function Type="Scene" Name="Scene Black - LED Wash Ultra Bright RGB" ID="4">
+  <Function Type="Scene" Name="" ID="4">
    <Speed Duration="0" FadeOut="0" FadeIn="0"/>
    <FixtureVal ID="0">1,0,2,0,3,0</FixtureVal>
   </Function>
@@ -93,7 +93,7 @@
   </Function>
   <Function Type="Scene" Name="Scene Light Gray - LED Wash Ultra Bright RGB" ID="15">
    <Speed Duration="0" FadeOut="0" FadeIn="0"/>
-   <FixtureVal ID="0">1,192,2,192,3,192</FixtureVal>
+   <FixtureVal ID="0">0,189,1,192,2,192,3,192</FixtureVal>
   </Function>
   <Function Type="Scene" Name="Scene Red - LED Wash Ultra Bright RGB" ID="16">
    <Speed Duration="0" FadeOut="0" FadeIn="0"/>
@@ -133,6 +133,27 @@
    <Step Number="14" FadeOut="0" FadeIn="0" Hold="0">18</Step>
    <Step Number="15" FadeOut="0" FadeIn="0" Hold="0">19</Step>
   </Function>
+  <Function Type="Chaser" Name="RED TOUCH" ID="21">
+   <Speed Duration="9000" FadeOut="0" FadeIn="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+   <Step Number="0" FadeOut="0" FadeIn="0" Hold="0">0</Step>
+  </Function>
+  <Function Type="Chaser" Name="GREEN TOUCH" ID="22">
+   <Speed Duration="9000" FadeOut="0" FadeIn="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+   <Step Number="0" FadeOut="0" FadeIn="2000" Hold="7000">1</Step>
+  </Function>
+  <Function Type="Chaser" Name="BLUE TOUCH" ID="23">
+   <Speed Duration="9000" FadeOut="0" FadeIn="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+   <Step Number="0" FadeOut="0" FadeIn="2000" Hold="7000">2</Step>
+  </Function>
  </Engine>
  <VirtualConsole>
   <Frame Caption="">
@@ -144,7 +165,7 @@
     <Font>Default</Font>
    </Appearance>
    <Button Icon="" ID="0" Caption="RED">
-    <Function ID="0"/>
+    <Function ID="21"/>
     <Action>Toggle</Action>
     <Intensity Adjust="False">100</Intensity>
     <Input Universe="0" Channel="36035"/>
@@ -158,7 +179,7 @@
     </Appearance>
    </Button>
    <Button Icon="" ID="1" Caption="GREEN">
-    <Function ID="1"/>
+    <Function ID="22"/>
     <Action>Toggle</Action>
     <Intensity Adjust="False">100</Intensity>
     <Input Universe="0" Channel="48728"/>
@@ -172,11 +193,66 @@
     </Appearance>
    </Button>
    <Button Icon="" ID="2" Caption="BLUE">
-    <Function ID="2"/>
+    <Function ID="23"/>
     <Action>Toggle</Action>
     <Intensity Adjust="False">100</Intensity>
     <Input Universe="0" Channel="45009"/>
     <WindowState Width="205" X="40" Y="145" Height="50" Visible="True"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+   </Button>
+   <Button Icon="" ID="3" Caption="default 1">
+    <Function ID="0"/>
+    <Action FadeOut="2000">StopAll</Action>
+    <Intensity Adjust="True">10</Intensity>
+    <Input Universe="0" Channel="48146"/>
+    <WindowState Width="205" X="260" Y="25" Height="50" Visible="True"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+   </Button>
+   <Button Icon="" ID="4" Caption="default 2">
+    <Function ID="0"/>
+    <Action FadeOut="2000">StopAll</Action>
+    <Intensity Adjust="True">10</Intensity>
+    <Input Universe="0" Channel="36489"/>
+    <WindowState Width="205" X="260" Y="85" Height="50" Visible="True"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+   </Button>
+   <Button Icon="" ID="5" Caption="default 3">
+    <Function ID="4294967295"/>
+    <Action FadeOut="2000">StopAll</Action>
+    <Intensity Adjust="True">10</Intensity>
+    <Input Universe="0" Channel="40704"/>
+    <WindowState Width="205" X="260" Y="145" Height="50" Visible="True"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+   </Button>
+   <Button Icon="" ID="6" Caption="DEFAULT">
+    <Function ID="15"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <WindowState Width="425" X="40" Y="210" Height="50" Visible="True"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
