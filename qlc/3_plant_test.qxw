@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://qlcplus.sourceforge.net/Workspace" CurrentWindow="VirtualConsole">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.9.1</Version>
+  <Author>soga</Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <Universe Name="Universe 1" ID="0" Passthrough="False">
+    <Input Plugin="OSC" Line="0" Profile="Soga Soga"/>
+    <Output Plugin="DMX USB" Line="0"/>
+   </Universe>
+   <Universe Name="Universe 2" ID="1" Passthrough="False"/>
+   <Universe Name="Universe 3" ID="2" Passthrough="False"/>
+   <Universe Name="Universe 4" ID="3" Passthrough="False"/>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>LED Wash Ultra Bright RGB</Model>
+   <Mode>4-channel</Mode>
+   <ID>0</ID>
+   <Name>LED Wash Ultra Bright RGB</Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Function Type="Scene" Name="Red scene - LED Wash Ultra Bright RGB" ID="0">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,189,1,255</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Green scene - LED Wash Ultra Bright RGB" ID="1">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,189,2,255</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Blue scene - LED Wash Ultra Bright RGB" ID="2">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,189,3,255</FixtureVal>
+  </Function>
+  <Function Type="Chaser" Name="Primary colours chaser - LED Wash Ultra Bright RGB" ID="3">
+   <Speed Duration="10000" FadeOut="0" FadeIn="3000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+   <Step Number="0" FadeOut="0" FadeIn="0" Hold="0">0</Step>
+   <Step Number="1" FadeOut="0" FadeIn="0" Hold="0">1</Step>
+   <Step Number="2" FadeOut="0" FadeIn="0" Hold="0">2</Step>
+  </Function>
+  <Function Type="Scene" Name="Scene Black - LED Wash Ultra Bright RGB" ID="4">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,0,2,0,3,0</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Scene Dark Blue - LED Wash Ultra Bright RGB" ID="5">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,0,2,0,3,128</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Scene Blue - LED Wash Ultra Bright RGB" ID="6">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,0,2,0,3,255</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Scene Dark Green - LED Wash Ultra Bright RGB" ID="7">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,0,2,128,3,0</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Scene Dark Cyan - LED Wash Ultra Bright RGB" ID="8">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,0,2,128,3,128</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Scene Green - LED Wash Ultra Bright RGB" ID="9">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,0,2,255,3,0</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Scene Cyan - LED Wash Ultra Bright RGB" ID="10">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,0,2,255,3,255</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Scene Dark Red - LED Wash Ultra Bright RGB" ID="11">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,128,2,0,3,0</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Scene Dark Magenta - LED Wash Ultra Bright RGB" ID="12">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,128,2,0,3,128</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Scene Dark Yellow - LED Wash Ultra Bright RGB" ID="13">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,128,2,128,3,0</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Scene Dark Gray - LED Wash Ultra Bright RGB" ID="14">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,128,2,128,3,128</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Scene Light Gray - LED Wash Ultra Bright RGB" ID="15">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,192,2,192,3,192</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Scene Red - LED Wash Ultra Bright RGB" ID="16">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,255,2,0,3,0</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Scene Magenta - LED Wash Ultra Bright RGB" ID="17">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,255,2,0,3,255</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Scene Yellow - LED Wash Ultra Bright RGB" ID="18">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,255,2,255,3,0</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Scene White - LED Wash Ultra Bright RGB" ID="19">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,255,2,255,3,255</FixtureVal>
+  </Function>
+  <Function Type="Chaser" Name="16 Colours chaser - LED Wash Ultra Bright RGB" ID="20">
+   <Speed Duration="10000" FadeOut="0" FadeIn="3000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+   <Step Number="0" FadeOut="0" FadeIn="0" Hold="0">4</Step>
+   <Step Number="1" FadeOut="0" FadeIn="0" Hold="0">5</Step>
+   <Step Number="2" FadeOut="0" FadeIn="0" Hold="0">6</Step>
+   <Step Number="3" FadeOut="0" FadeIn="0" Hold="0">7</Step>
+   <Step Number="4" FadeOut="0" FadeIn="0" Hold="0">8</Step>
+   <Step Number="5" FadeOut="0" FadeIn="0" Hold="0">9</Step>
+   <Step Number="6" FadeOut="0" FadeIn="0" Hold="0">10</Step>
+   <Step Number="7" FadeOut="0" FadeIn="0" Hold="0">11</Step>
+   <Step Number="8" FadeOut="0" FadeIn="0" Hold="0">12</Step>
+   <Step Number="9" FadeOut="0" FadeIn="0" Hold="0">13</Step>
+   <Step Number="10" FadeOut="0" FadeIn="0" Hold="0">14</Step>
+   <Step Number="11" FadeOut="0" FadeIn="0" Hold="0">15</Step>
+   <Step Number="12" FadeOut="0" FadeIn="0" Hold="0">16</Step>
+   <Step Number="13" FadeOut="0" FadeIn="0" Hold="0">17</Step>
+   <Step Number="14" FadeOut="0" FadeIn="0" Hold="0">18</Step>
+   <Step Number="15" FadeOut="0" FadeIn="0" Hold="0">19</Step>
+  </Function>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="">
+   <Appearance>
+    <FrameStyle>None</FrameStyle>
+    <ForegroundColor>Default</ForegroundColor>
+    <BackgroundColor>Default</BackgroundColor>
+    <BackgroundImage>None</BackgroundImage>
+    <Font>Default</Font>
+   </Appearance>
+   <Button Icon="" ID="0" Caption="RED">
+    <Function ID="0"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="36035"/>
+    <WindowState Width="205" X="40" Y="25" Height="50" Visible="True"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+   </Button>
+   <Button Icon="" ID="1" Caption="GREEN">
+    <Function ID="1"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="48728"/>
+    <WindowState Width="205" X="40" Y="85" Height="50" Visible="True"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+   </Button>
+   <Button Icon="" ID="2" Caption="BLUE">
+    <Function ID="2"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="45009"/>
+    <WindowState Width="205" X="40" Y="145" Height="50" Visible="True"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+   </Button>
+  </Frame>
+  <Properties>
+   <Size Width="1920" Height="1080"/>
+   <Keyboard TapModifier="67108864"/>
+   <GrandMaster SliderMode="Normal" ChannelMode="Intensity" ValueMode="Reduce"/>
+  </Properties>
+ </VirtualConsole>
+ <SimpleDesk>
+  <Engine/>
+ </SimpleDesk>
+</Workspace>
+
