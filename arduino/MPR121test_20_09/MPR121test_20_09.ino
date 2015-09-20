@@ -50,11 +50,10 @@ void setup() {
 int value_1 = 82;
 int value_2 = 105;
 int value_3 = 120;
-int value_9 = 100;
 
 int value_off_1 = 87;
 int value_off_2 = 111;
-int value_off_3 = 127;
+int value_off_3 = 125;
 
 void loop() {
   // Get the currently touched pads
