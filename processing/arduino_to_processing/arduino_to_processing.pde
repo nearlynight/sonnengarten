@@ -33,7 +33,7 @@ void draw()
     time = hour() + ":" +  minute() + ":" + second();
     //int foo = Integer.parseInt(val);
     
-    OscMessage myMessage_1 = new OscMessage(1);
+    //OscMessage myMessage_1 = new OscMessage(1);
     
     if (val == 49) {
       OscMessage m = new OscMessage("/touch/1");
@@ -56,6 +56,13 @@ void draw()
       oscP5.send(m,myRemoteLocation); 
       println(time + " 3 touch");
     } 
+    if (val == 52) {
+      OscMessage m = new OscMessage("/touch/4");
+      int d = 4;
+      m.add(d);
+      oscP5.send(m,myRemoteLocation); 
+      println(time + " 4 touch");
+    } 
        
     if (val == 97) {
       OscMessage m = new OscMessage("/release/1");
@@ -77,6 +84,13 @@ void draw()
       m.add(C);
       oscP5.send(m,myRemoteLocation); 
       println(time + " 3 released");
+    }
+    if (val == 100 ) {
+      OscMessage m = new OscMessage("/release/4");
+      int D = 100;
+      m.add(D);
+      oscP5.send(m,myRemoteLocation); 
+      println(time + " 4 released");
     }
   //if (val != -1 ){
   //  println(time + " " + val); //print it out in the console
