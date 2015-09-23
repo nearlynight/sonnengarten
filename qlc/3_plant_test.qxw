@@ -134,25 +134,32 @@
    <Step Number="15" FadeOut="0" FadeIn="0" Hold="0">19</Step>
   </Function>
   <Function Type="Chaser" Name="RED TOUCH" ID="21">
-   <Speed Duration="9000" FadeOut="0" FadeIn="2000"/>
+   <Speed Duration="9000" FadeOut="1000" FadeIn="2000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
    <Step Number="0" FadeOut="0" FadeIn="0" Hold="0">0</Step>
   </Function>
   <Function Type="Chaser" Name="GREEN TOUCH" ID="22">
-   <Speed Duration="9000" FadeOut="0" FadeIn="2000"/>
+   <Speed Duration="9000" FadeOut="1000" FadeIn="2000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
    <Step Number="0" FadeOut="0" FadeIn="2000" Hold="7000">1</Step>
   </Function>
   <Function Type="Chaser" Name="BLUE TOUCH" ID="23">
-   <Speed Duration="9000" FadeOut="0" FadeIn="2000"/>
+   <Speed Duration="9000" FadeOut="1000" FadeIn="2000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
    <Step Number="0" FadeOut="0" FadeIn="2000" Hold="7000">2</Step>
+  </Function>
+  <Function Type="Chaser" Name="RED RELEASE" ID="24">
+   <Speed Duration="0" FadeOut="2000" FadeIn="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+   <Step Number="0" FadeOut="0" FadeIn="0" Hold="0">0</Step>
   </Function>
  </Engine>
  <VirtualConsole>
@@ -207,9 +214,9 @@
     </Appearance>
    </Button>
    <Button Icon="" ID="3" Caption="default 1">
-    <Function ID="0"/>
+    <Function ID="24"/>
     <Action FadeOut="2000">StopAll</Action>
-    <Intensity Adjust="True">10</Intensity>
+    <Intensity Adjust="False">20</Intensity>
     <Input Universe="0" Channel="48146"/>
     <WindowState Width="205" X="260" Y="25" Height="50" Visible="True"/>
     <Appearance>
