@@ -65,30 +65,30 @@ void draw()
     } 
        
     if (val == 97) {
-      OscMessage m = new OscMessage("/release/1");
-      int A = 97;
-      m.add(A);
+      OscMessage m = new OscMessage("/touch/1");
+      int a = 1;
+      m.add(a);
       oscP5.send(m,myRemoteLocation); 
       println(time + " 1 released");
     }
     if (val == 98) {
-      OscMessage m = new OscMessage("/release/2");
-      int B = 98;
-      m.add(B);
+      OscMessage m = new OscMessage("/touch/2");
+      int b = 2;
+      m.add(b);
       oscP5.send(m,myRemoteLocation); 
       println(time + " 2 released");
     }
     if (val == 99 ) {
-      OscMessage m = new OscMessage("/release/3");
-      int C = 99;
-      m.add(C);
+      OscMessage m = new OscMessage("/touch/3");
+      int c = 3;
+      m.add(c);
       oscP5.send(m,myRemoteLocation); 
       println(time + " 3 released");
     }
     if (val == 100 ) {
-      OscMessage m = new OscMessage("/release/4");
-      int D = 100;
-      m.add(D);
+      OscMessage m = new OscMessage("/touch/4");
+      int d = 4;
+      m.add(d);
       oscP5.send(m,myRemoteLocation); 
       println(time + " 4 released");
     }
