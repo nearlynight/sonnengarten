@@ -49,14 +49,14 @@ void setup() {
 
 
 int value_1 = 64;
-int value_2 = 80;
+int value_2 = 64;
 int value_3 = 64;
-int value_4 = 64;
+int value_4 = 84;
 
 int value_off_1 = 72;
-int value_off_2 = 92;
+int value_off_2 = 72;
 int value_off_3 = 72;
-int value_off_4 = 76;
+int value_off_4 = 92;
 
 void loop() {
   // Get the currently touched pads
