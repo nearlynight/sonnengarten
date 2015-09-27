@@ -31,6 +31,8 @@ boolean one_is_touched = false;
 boolean two_is_touched = false;
 boolean three_is_touched = false;
 boolean four_is_touched = false;
+boolean five_is_touched = false;
+boolean six_is_touched = false;
 
 void setup() {
   while (!Serial);        // needed to keep leonardo/micro from starting too fast!
@@ -47,23 +49,32 @@ void setup() {
   Serial.println("MPR121 found!");
 }
 
+// RELEASE
+int value_off_1 = 64; // 0
+int value_off_2 = 72; // 2
+int value_off_3 = 76; // 4
+int value_off_4 = 64; // 6
+int value_off_5 = 72;
+int value_off_6 = 72;
 
-int value_1 = 64;
-int value_2 = 64;
-int value_3 = 64;
-int value_4 = 84;
+// TOUCH
+int value_1 = 44; // 0
+int value_2 = 56; // 2
+int value_3 = 60; // 4
+int value_4 = 52; // 6
+int value_5 = 64;
+int value_6 = 64; 
 
-int value_off_1 = 72;
-int value_off_2 = 72;
-int value_off_3 = 72;
-int value_off_4 = 92;
 
 void loop() {
   // Get the currently touched pads
   currtouched = cap.touched();
+
+  //TODO: find out fitting off values!
+  //Serial.println(cap.baselineData(6));
   
   // detect touch for each pin
-  if(!one_is_touched && cap.baselineData(1) <= value_1) {
+  if(!one_is_touched && cap.baselineData(0) <= value_1) {
     //Serial.println("TOUCH 1");
     Serial.print(1);
     one_is_touched = true;
@@ -73,20 +84,30 @@ void loop() {
     Serial.print(2);
     two_is_touched = true;
   }
-  if(!three_is_touched && cap.baselineData(3) <= value_3) {
+  if(!three_is_touched && cap.baselineData(4) <= value_3) {
     //Serial.println("TOUCH 3");
     Serial.print(3);
     three_is_touched = true;
   }
-  if(!four_is_touched && cap.baselineData(4) <= value_4) {
+  if(!four_is_touched && cap.baselineData(6) <= value_4) {
     //Serial.println("TOUCH 3");
     Serial.print(4);
     four_is_touched = true;
   }
+  if(!five_is_touched && cap.baselineData(8) <= value_5) {
+    //Serial.println("TOUCH 3");
+    Serial.print(5);
+    five_is_touched = true;
+  }
+  if(!six_is_touched && cap.baselineData(10) <= value_6) {
+    //Serial.println("TOUCH 3");
+    Serial.print(6);
+    six_is_touched = true;
+  }
 
   
   // detect it no touch
-  if(one_is_touched && cap.baselineData(1) >= value_off_1) {
+  if(one_is_touched && cap.baselineData(0) >= value_off_1) {
     Serial.print("a");
     one_is_touched = false;
   }
@@ -94,17 +115,24 @@ void loop() {
     Serial.print("b");
     two_is_touched = false;
   }
-  if(three_is_touched && cap.baselineData(3) >= value_off_3) {
+  if(three_is_touched && cap.baselineData(4) >= value_off_3) {
     Serial.print("c");
     three_is_touched = false;
   }
-  if(four_is_touched && cap.baselineData(4) >= value_off_4) {
+  if(four_is_touched && cap.baselineData(6) >= value_off_4) {
     Serial.print("d");
     four_is_touched = false;
   }
+  if(five_is_touched && cap.baselineData(8) >= value_off_5) {
+    Serial.print("e");
+    five_is_touched = false;
+  }
+  if(six_is_touched && cap.baselineData(10) >= value_off_6) {
+    Serial.print("f");
+    six_is_touched = false;
+  }
 
-  //TODO: find out fitting off values!
-  //Serial.println(cap.baselineData(4));
+
   
   
   
