@@ -50,18 +50,18 @@ void setup() {
 }
 
 // RELEASE
-int value_off_1 = 64; // 0
-int value_off_2 = 72; // 2
-int value_off_3 = 76; // 4
+int value_off_1 = 76; // 0
+int value_off_2 = 56; // 2
+int value_off_3 = 56; // 4
 int value_off_4 = 64; // 6
 int value_off_5 = 72;
 int value_off_6 = 72;
 
 // TOUCH
-int value_1 = 44; // 0
-int value_2 = 56; // 2
-int value_3 = 60; // 4
-int value_4 = 52; // 6
+int value_1 = 68; // 0
+int value_2 = 50; // 2
+int value_3 = 48; // 4
+int value_4 = 56; // 6
 int value_5 = 64;
 int value_6 = 64; 
 
@@ -71,7 +71,7 @@ void loop() {
   currtouched = cap.touched();
 
   //TODO: find out fitting off values!
-  //Serial.println(cap.baselineData(6));
+  //Serial.println(cap.baselineData(0));
   
   // detect touch for each pin
   if(!one_is_touched && cap.baselineData(0) <= value_1) {
