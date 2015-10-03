@@ -50,17 +50,17 @@ void setup() {
 }
 
 // RELEASE
-int value_off_1 = 76; // 0
-int value_off_2 = 56; // 2
-int value_off_3 = 56; // 4
+int value_off_1 = 56; // 0
+int value_off_2 = 48; // 2
+int value_off_3 = 52; // 4
 int value_off_4 = 64; // 6
 int value_off_5 = 72;
 int value_off_6 = 72;
 
 // TOUCH
-int value_1 = 68; // 0
-int value_2 = 50; // 2
-int value_3 = 48; // 4
+int value_1 = 48; // 0
+int value_2 = 40; // 2
+int value_3 = 46; // 4
 int value_4 = 56; // 6
 int value_5 = 64;
 int value_6 = 64; 
