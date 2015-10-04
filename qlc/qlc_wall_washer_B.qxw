@@ -9,7 +9,7 @@
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0" Passthrough="False">
-    <Input Plugin="OSC" Line="0" Profile="None"/>
+    <Input Plugin="OSC" Line="0" Profile="sogaB sogaB"/>
     <Output Plugin="DMX USB" Line="0">
      <PluginParameters UniverseChannels="24"/>
     </Output>
@@ -211,7 +211,7 @@
     <Function ID="24"/>
     <Action>Toggle</Action>
     <Intensity Adjust="False">100</Intensity>
-    <WindowState Width="115" X="25" Y="335" Height="40" Visible="True"/>
+    <WindowState Width="420" X="10" Y="195" Height="30" Visible="True"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -224,16 +224,16 @@
     <Function ID="24"/>
     <Action>StopAll</Action>
     <Intensity Adjust="False">100</Intensity>
-    <WindowState Width="115" X="25" Y="385" Height="40" Visible="True"/>
+    <WindowState Width="420" X="10" Y="240" Height="30" Visible="True"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundColor>4294935427</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
    </Button>
-   <Frame ID="26" Caption="WHITE">
+   <Frame ID="26" Caption="WHITE ARDUINO 1">
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -241,13 +241,13 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Width="205" X="180" Y="5" Height="460" Visible="True"/>
+    <WindowState Width="205" X="10" Y="10" Height="180" Visible="True"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>True</ShowEnableButton>
     <Collapsed>False</Collapsed>
-    <Disabled>False</Disabled>
+    <Disabled>True</Disabled>
     <Enable>
      <Key></Key>
     </Enable>
@@ -307,12 +307,31 @@
       <Font>Default</Font>
      </Appearance>
     </Button>
-    <Button Icon="" ID="15" Caption="WHITE 5">
+   </Frame>
+   <Frame ID="0" Caption="WHITE ARDUINO 2">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Width="205" X="225" Y="10" Height="180" Visible="True"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Enable>
+     <Key></Key>
+    </Enable>
+    <Button Icon="" ID="1" Caption="WHITE 5">
      <Function ID="42"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="56174"/>
-     <WindowState Width="195" X="5" Y="180" Height="30" Visible="True"/>
+     <Input Universe="0" Channel="51943"/>
+     <WindowState Width="195" X="5" Y="40" Height="30" Visible="True"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -321,12 +340,12 @@
       <Font>Default</Font>
      </Appearance>
     </Button>
-    <Button Icon="" ID="16" Caption="WHITE 6">
+    <Button Icon="" ID="2" Caption="WHITE 6">
      <Function ID="43"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
      <Input Universe="0" Channel="63612"/>
-     <WindowState Width="195" X="5" Y="215" Height="30" Visible="True"/>
+     <WindowState Width="195" X="5" Y="75" Height="30" Visible="True"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -335,12 +354,12 @@
       <Font>Default</Font>
      </Appearance>
     </Button>
-    <Button Icon="" ID="17" Caption="WHITE 7">
+    <Button Icon="" ID="3" Caption="WHITE 7">
      <Function ID="44"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="56174"/>
-     <WindowState Width="195" X="5" Y="250" Height="30" Visible="True"/>
+     <Input Universe="0" Channel="59893"/>
+     <WindowState Width="195" X="5" Y="110" Height="30" Visible="True"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -349,12 +368,12 @@
       <Font>Default</Font>
      </Appearance>
     </Button>
-    <Button Icon="" ID="19" Caption="WHITE 8">
+    <Button Icon="" ID="4" Caption="WHITE 8">
      <Function ID="45"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="56174"/>
-     <WindowState Width="195" X="5" Y="285" Height="30" Visible="True"/>
+     <Input Universe="0" Channel="4354"/>
+     <WindowState Width="195" X="5" Y="145" Height="30" Visible="True"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
