@@ -241,7 +241,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Width="205" X="10" Y="10" Height="180" Visible="True"/>
+    <WindowState Width="205" X="10" Y="10" Height="145" Visible="True"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -293,20 +293,6 @@
       <Font>Default</Font>
      </Appearance>
     </Button>
-    <Button Icon="" ID="30" Caption="WHITE 4">
-     <Function ID="29"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="56174"/>
-     <WindowState Width="195" X="5" Y="145" Height="30" Visible="True"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-    </Button>
    </Frame>
    <Frame ID="0" Caption="WHITE ARDUINO 2">
     <Appearance>
@@ -331,7 +317,7 @@
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
      <Input Universe="0" Channel="51943"/>
-     <WindowState Width="195" X="5" Y="40" Height="30" Visible="True"/>
+     <WindowState Width="195" X="5" Y="75" Height="30" Visible="True"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -345,7 +331,7 @@
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
      <Input Universe="0" Channel="63612"/>
-     <WindowState Width="195" X="5" Y="75" Height="30" Visible="True"/>
+     <WindowState Width="195" X="5" Y="110" Height="30" Visible="True"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -359,7 +345,7 @@
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
      <Input Universe="0" Channel="59893"/>
-     <WindowState Width="195" X="5" Y="110" Height="30" Visible="True"/>
+     <WindowState Width="195" X="5" Y="145" Height="30" Visible="True"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -368,12 +354,12 @@
       <Font>Default</Font>
      </Appearance>
     </Button>
-    <Button Icon="" ID="4" Caption="WHITE 8">
-     <Function ID="45"/>
+    <Button Icon="" ID="4" Caption="WHITE 4">
+     <Function ID="29"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="4354"/>
-     <WindowState Width="195" X="5" Y="145" Height="30" Visible="True"/>
+     <Input Universe="0" Channel="56174"/>
+     <WindowState Width="195" X="5" Y="40" Height="30" Visible="True"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>

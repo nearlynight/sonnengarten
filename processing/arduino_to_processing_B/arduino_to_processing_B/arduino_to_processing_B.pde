@@ -77,15 +77,15 @@ void draw()
       println(time + " 3 touch");
       output.println(date + time + " 3 touched");
     } 
-    if (val_1 == 52) {
+    if (val_2 == 49) {
       OscMessage m = new OscMessage("/touch/4");
-      int d = 4;
-      m.add(d);
-      oscP5.send(m,myRemoteLocation); 
+      int a = 4;
+      m.add(a);
+      oscP5.send(m,myRemoteLocation);  
       println(time + " 4 touch");
       output.println(date + time + " 4 touched");
-    } 
-    if (val_2 == 49) {
+    }
+    if (val_2 == 50) {
       OscMessage m = new OscMessage("/touch/5");
       int a = 5;
       m.add(a);
@@ -93,7 +93,7 @@ void draw()
       println(time + " 5 touch");
       output.println(date + time + " 5 touched");
     }
-    if (val_2 == 50) {
+    if (val_2 == 51) {
       OscMessage m = new OscMessage("/touch/6");
       int a = 6;
       m.add(a);
@@ -101,21 +101,13 @@ void draw()
       println(time + " 6 touch");
       output.println(date + time + " 6 touched");
     }
-    if (val_2 == 51) {
+    if (val_2 == 52) {
       OscMessage m = new OscMessage("/touch/7");
       int a = 7;
       m.add(a);
       oscP5.send(m,myRemoteLocation);  
       println(time + " 7 touch");
       output.println(date + time + " 7 touched");
-    }
-    if (val_2 == 52) {
-      OscMessage m = new OscMessage("/touch/8");
-      int a = 8;
-      m.add(a);
-      oscP5.send(m,myRemoteLocation);  
-      println(time + " 8 touch");
-      output.println(date + time + " 8 touched");
     }
        
        
@@ -144,15 +136,15 @@ void draw()
       println(time + " 3 released");
       output.println(date + time + " 3 released");
     }
-    if (val_1 == 100 ) {
+    if (val_2 == 97 ) {
       OscMessage m = new OscMessage("/touch/4");
-      int d = 4;
-      m.add(d);
+      int e = 4;
+      m.add(e);
       oscP5.send(m,myRemoteLocation); 
       println(time + " 4 released");
       output.println(date + time + " 4 released");
     }
-    if (val_2 == 97 ) {
+    if (val_2 == 98 ) {
       OscMessage m = new OscMessage("/touch/5");
       int e = 5;
       m.add(e);
@@ -160,7 +152,7 @@ void draw()
       println(time + " 5 released");
       output.println(date + time + " 5 released");
     }
-    if (val_2 == 98 ) {
+    if (val_2 == 99 ) {
       OscMessage m = new OscMessage("/touch/6");
       int e = 6;
       m.add(e);
@@ -168,21 +160,13 @@ void draw()
       println(time + " 6 released");
       output.println(date + time + " 6 released");
     }
-    if (val_2 == 99 ) {
+    if (val_2 == 100 ) {
       OscMessage m = new OscMessage("/touch/7");
       int e = 7;
       m.add(e);
       oscP5.send(m,myRemoteLocation); 
       println(time + " 7 released");
       output.println(date + time + " 7 released");
-    }
-    if (val_2 == 100 ) {
-      OscMessage m = new OscMessage("/touch/8");
-      int e = 8;
-      m.add(e);
-      oscP5.send(m,myRemoteLocation); 
-      println(time + " 8 released");
-      output.println(date + time + " 8 released");
     }
    
   //if (val != -1 ){
