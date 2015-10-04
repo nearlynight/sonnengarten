@@ -54,16 +54,16 @@ int value_off_1 = 56; // 0
 int value_off_2 = 48; // 2
 int value_off_3 = 52; // 4
 int value_off_4 = 64; // 6
-int value_off_5 = 72;
-int value_off_6 = 72;
+int value_off_5 = 72; // 8
+
 
 // TOUCH
 int value_1 = 48; // 0
 int value_2 = 40; // 2
 int value_3 = 46; // 4
 int value_4 = 56; // 6
-int value_5 = 64;
-int value_6 = 64; 
+int value_5 = 64; // 8
+
 
 
 void loop() {
@@ -99,11 +99,6 @@ void loop() {
     Serial.print(5);
     five_is_touched = true;
   }
-  if(!six_is_touched && cap.baselineData(10) <= value_6) {
-    //Serial.println("TOUCH 3");
-    Serial.print(6);
-    six_is_touched = true;
-  }
 
   
   // detect it no touch
@@ -127,27 +122,8 @@ void loop() {
     Serial.print("e");
     five_is_touched = false;
   }
-  if(six_is_touched && cap.baselineData(10) >= value_off_6) {
-    Serial.print("f");
-    six_is_touched = false;
-  }
 
 
-  
-  
-  
-  /*
-  for (uint8_t i=0; i<12; i++) {
-    // it if *is* touched and *wasnt* touched before, alert!
-    if ((currtouched & _BV(i)) && !(lasttouched & _BV(i)) ) {
-      //Serial.print(i); Serial.println(" touched");
-    }
-    // if it *was* touched and now *isnt*, alert!
-    if (!(currtouched & _BV(i)) && (lasttouched & _BV(i)) ) {
-      //Serial.print(i); Serial.println(" released");
-    }
-  }
-  */
 
   // reset our state
   lasttouched = currtouched;

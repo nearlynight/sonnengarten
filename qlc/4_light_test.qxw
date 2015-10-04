@@ -190,6 +190,14 @@
    <FixtureVal ID="1">0,255,1,255,2,255</FixtureVal>
    <FixtureVal ID="2">0,255,1,255,2,255</FixtureVal>
    <FixtureVal ID="3">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="4">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="6">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="7">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="8">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="9">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="10">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="11">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="12">0,255,1,255,2,255</FixtureVal>
   </Function>
   <Function Type="Chaser" Name="green chaser 4" ID="25">
    <Speed Duration="12000" FadeOut="2000" FadeIn="2000"/>
@@ -453,7 +461,7 @@
      <Function ID="43"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="56174"/>
+     <Input Universe="0" Channel="63612"/>
      <WindowState Width="195" X="5" Y="215" Height="30" Visible="True"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
@@ -509,7 +517,7 @@
      <Function ID="64"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="56174"/>
+     <Input Universe="0" Channel="13792"/>
      <WindowState Width="195" X="5" Y="355" Height="30" Visible="True"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
