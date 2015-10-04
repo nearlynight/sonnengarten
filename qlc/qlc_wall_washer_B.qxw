@@ -247,7 +247,7 @@
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>True</ShowEnableButton>
     <Collapsed>False</Collapsed>
-    <Disabled>True</Disabled>
+    <Disabled>False</Disabled>
     <Enable>
      <Key></Key>
     </Enable>
