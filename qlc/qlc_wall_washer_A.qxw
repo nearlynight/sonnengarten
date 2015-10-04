@@ -1,0 +1,570 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://qlcplus.sourceforge.net/Workspace" CurrentWindow="VirtualConsole">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.9.1</Version>
+  <Author>soga</Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <Universe Name="Universe 1" ID="0" Passthrough="False">
+    <Input Plugin="OSC" Line="0" Profile="Soga Soga"/>
+    <Output Plugin="DMX USB" Line="0">
+     <PluginParameters UniverseChannels="36"/>
+    </Output>
+   </Universe>
+   <Universe Name="Universe 2" ID="1" Passthrough="False"/>
+   <Universe Name="Universe 3" ID="2" Passthrough="False"/>
+   <Universe Name="Universe 4" ID="3" Passthrough="False"/>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>Ledcolourlight Technology</Manufacturer>
+   <Model>WW4423-D2401</Model>
+   <Mode>3-channel RGB</Mode>
+   <ID>0</ID>
+   <Name>light_1</Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Ledcolourlight Technology</Manufacturer>
+   <Model>WW4423-D2401</Model>
+   <Mode>3-channel RGB</Mode>
+   <ID>1</ID>
+   <Name>light_2</Name>
+   <Universe>0</Universe>
+   <Address>3</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Ledcolourlight Technology</Manufacturer>
+   <Model>WW4423-D2401</Model>
+   <Mode>3-channel RGB</Mode>
+   <ID>2</ID>
+   <Name>light_3</Name>
+   <Universe>0</Universe>
+   <Address>6</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Ledcolourlight Technology</Manufacturer>
+   <Model>WW4423-D2401</Model>
+   <Mode>3-channel RGB</Mode>
+   <ID>3</ID>
+   <Name>light_4</Name>
+   <Universe>0</Universe>
+   <Address>9</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Ledcolourlight Technology</Manufacturer>
+   <Model>WW4423-D2401</Model>
+   <Mode>3-channel RGB</Mode>
+   <ID>4</ID>
+   <Name>light_5</Name>
+   <Universe>0</Universe>
+   <Address>12</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Ledcolourlight Technology</Manufacturer>
+   <Model>WW4423-D2401</Model>
+   <Mode>3-channel RGB</Mode>
+   <ID>6</ID>
+   <Name>light_6</Name>
+   <Universe>0</Universe>
+   <Address>15</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Ledcolourlight Technology</Manufacturer>
+   <Model>WW4423-D2401</Model>
+   <Mode>3-channel RGB</Mode>
+   <ID>7</ID>
+   <Name>light_7</Name>
+   <Universe>0</Universe>
+   <Address>18</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Ledcolourlight Technology</Manufacturer>
+   <Model>WW4423-D2401</Model>
+   <Mode>3-channel RGB</Mode>
+   <ID>8</ID>
+   <Name>light_8</Name>
+   <Universe>0</Universe>
+   <Address>21</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Ledcolourlight Technology</Manufacturer>
+   <Model>WW4423-D2401</Model>
+   <Mode>3-channel RGB</Mode>
+   <ID>9</ID>
+   <Name>light_9</Name>
+   <Universe>0</Universe>
+   <Address>24</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Ledcolourlight Technology</Manufacturer>
+   <Model>WW4423-D2401</Model>
+   <Mode>3-channel RGB</Mode>
+   <ID>10</ID>
+   <Name>light_10</Name>
+   <Universe>0</Universe>
+   <Address>27</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Ledcolourlight Technology</Manufacturer>
+   <Model>WW4423-D2401</Model>
+   <Mode>3-channel RGB</Mode>
+   <ID>11</ID>
+   <Name>light_11</Name>
+   <Universe>0</Universe>
+   <Address>30</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Ledcolourlight Technology</Manufacturer>
+   <Model>WW4423-D2401</Model>
+   <Mode>3-channel RGB</Mode>
+   <ID>12</ID>
+   <Name>light_12</Name>
+   <Universe>0</Universe>
+   <Address>33</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Function Type="Chaser" Name="green-red" ID="0">
+   <Speed Duration="4000" FadeOut="2000" FadeIn="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+  </Function>
+  <Function Type="Chaser" Name="green chaser 1" ID="1">
+   <Speed Duration="12000" FadeOut="2000" FadeIn="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+  </Function>
+  <Function Type="Chaser" Name="green chaser 2" ID="2">
+   <Speed Duration="12000" FadeOut="2000" FadeIn="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+  </Function>
+  <Function Type="Chaser" Name="green chaser 3" ID="3">
+   <Speed Duration="12000" FadeOut="2000" FadeIn="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+  </Function>
+  <Function Type="Scene" Name="WHITE 1" ID="16">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,255,1,255,2,255</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="WHITE 2" ID="17">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="1">0,255,1,255,2,255</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="WHITE 3" ID="18">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="2">0,255,1,255,2,255</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="WHITE 4" ID="19">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="3">0,255,1,255,2,255</FixtureVal>
+  </Function>
+  <Function Type="Chaser" Name="Primary colours chaser - WW4423-D2401" ID="23">
+   <Speed Duration="10000" FadeOut="0" FadeIn="3000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+  </Function>
+  <Function Type="Scene" Name="ALL WHITE" ID="24">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="1">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="2">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="3">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="4">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="6">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="7">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="8">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="9">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="10">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="11">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="12">0,255,1,255,2,255</FixtureVal>
+  </Function>
+  <Function Type="Chaser" Name="green chaser 4" ID="25">
+   <Speed Duration="12000" FadeOut="2000" FadeIn="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+  </Function>
+  <Function Type="Chaser" Name="white chaser 1" ID="26">
+   <Speed Duration="12000" FadeOut="1000" FadeIn="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+   <Step Number="0" FadeOut="2000" FadeIn="2000" Hold="10000">16</Step>
+  </Function>
+  <Function Type="Chaser" Name="white chaser 2" ID="27">
+   <Speed Duration="12000" FadeOut="1000" FadeIn="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+   <Step Number="0" FadeOut="2000" FadeIn="2000" Hold="10000">17</Step>
+  </Function>
+  <Function Type="Chaser" Name="white chaser 3" ID="28">
+   <Speed Duration="12000" FadeOut="1000" FadeIn="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+   <Step Number="0" FadeOut="2000" FadeIn="2000" Hold="10000">18</Step>
+  </Function>
+  <Function Type="Chaser" Name="white chaser 4" ID="29">
+   <Speed Duration="12000" FadeOut="1000" FadeIn="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+   <Step Number="0" FadeOut="2000" FadeIn="2000" Hold="10000">19</Step>
+  </Function>
+  <Function Type="Scene" Name="WHITE 5" ID="30">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="4">0,255,1,255,2,255</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="WHITE 6" ID="31">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="6">0,255,1,255,2,255</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="WHITE 7" ID="32">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="7">0,255,1,255,2,255</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="WHITE 8" ID="33">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="8">0,255,1,255,2,255</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="WHITE 9" ID="34">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="9">0,255,1,255,2,255</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="WHITE 10" ID="35">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="10">0,255,1,255,2,255</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="WHITE 11" ID="36">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="11">0,255,1,255,2,255</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="WHITE 12" ID="37">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="12">0,255,1,255,2,255</FixtureVal>
+  </Function>
+  <Function Type="Chaser" Name="Primary colours chaser - WW4423-D2401" ID="41">
+   <Speed Duration="10000" FadeOut="0" FadeIn="3000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+  </Function>
+  <Function Type="Chaser" Name="white chaser 5" ID="42">
+   <Speed Duration="12000" FadeOut="1000" FadeIn="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+   <Step Number="0" FadeOut="1000" FadeIn="2000" Hold="10000">30</Step>
+  </Function>
+  <Function Type="Chaser" Name="white chaser 6" ID="43">
+   <Speed Duration="12000" FadeOut="1000" FadeIn="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+   <Step Number="0" FadeOut="1000" FadeIn="2000" Hold="10000">31</Step>
+  </Function>
+  <Function Type="Chaser" Name="white chaser 7" ID="44">
+   <Speed Duration="12000" FadeOut="1000" FadeIn="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+   <Step Number="0" FadeOut="1000" FadeIn="2000" Hold="10000">32</Step>
+  </Function>
+  <Function Type="Chaser" Name="white chaser 8" ID="45">
+   <Speed Duration="12000" FadeOut="1000" FadeIn="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+   <Step Number="0" FadeOut="1000" FadeIn="2000" Hold="10000">33</Step>
+  </Function>
+  <Function Type="Chaser" Name="white chaser 9" ID="46">
+   <Speed Duration="12000" FadeOut="1000" FadeIn="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+   <Step Number="0" FadeOut="1000" FadeIn="2000" Hold="10000">34</Step>
+  </Function>
+  <Function Type="Chaser" Name="16 Colours chaser - WW4423-D2401" ID="63">
+   <Speed Duration="10000" FadeOut="0" FadeIn="3000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+  </Function>
+  <Function Type="Chaser" Name="white chaser 10" ID="64">
+   <Speed Duration="12000" FadeOut="1000" FadeIn="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+   <Step Number="0" FadeOut="1000" FadeIn="2000" Hold="10000">35</Step>
+  </Function>
+  <Function Type="Chaser" Name="white chaser 11" ID="65">
+   <Speed Duration="12000" FadeOut="1000" FadeIn="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+   <Step Number="0" FadeOut="1000" FadeIn="2000" Hold="10000">36</Step>
+  </Function>
+  <Function Type="Chaser" Name="white chaser 12" ID="66">
+   <Speed Duration="12000" FadeOut="1000" FadeIn="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Common" FadeIn="Common"/>
+   <Step Number="0" FadeOut="1000" FadeIn="2000" Hold="10000">37</Step>
+  </Function>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="">
+   <Appearance>
+    <FrameStyle>None</FrameStyle>
+    <ForegroundColor>Default</ForegroundColor>
+    <BackgroundColor>Default</BackgroundColor>
+    <BackgroundImage>None</BackgroundImage>
+    <Font>Default</Font>
+   </Appearance>
+   <Button Icon="" ID="13" Caption="ALL WHITE">
+    <Function ID="24"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <WindowState Width="115" X="25" Y="335" Height="40" Visible="True"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+   </Button>
+   <Button Icon="" ID="18" Caption="ALL OFF">
+    <Function ID="24"/>
+    <Action>StopAll</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <WindowState Width="115" X="25" Y="385" Height="40" Visible="True"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+   </Button>
+   <Frame ID="26" Caption="WHITE">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Width="205" X="180" Y="5" Height="460" Visible="True"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Enable>
+     <Key></Key>
+    </Enable>
+    <Button Icon="" ID="27" Caption="WHITE 1">
+     <Function ID="26"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="36035"/>
+     <WindowState Width="195" X="5" Y="40" Height="30" Visible="True"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="28" Caption="WHITE 2">
+     <Function ID="27"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="48728"/>
+     <WindowState Width="195" X="5" Y="75" Height="30" Visible="True"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="29" Caption="WHITE 3">
+     <Function ID="28"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="45009"/>
+     <WindowState Width="195" X="5" Y="110" Height="30" Visible="True"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="30" Caption="WHITE 4">
+     <Function ID="29"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="56174"/>
+     <WindowState Width="195" X="5" Y="145" Height="30" Visible="True"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="15" Caption="WHITE 5">
+     <Function ID="42"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="56174"/>
+     <WindowState Width="195" X="5" Y="180" Height="30" Visible="True"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="16" Caption="WHITE 6">
+     <Function ID="43"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="63612"/>
+     <WindowState Width="195" X="5" Y="215" Height="30" Visible="True"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="17" Caption="WHITE 7">
+     <Function ID="44"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="56174"/>
+     <WindowState Width="195" X="5" Y="250" Height="30" Visible="True"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="19" Caption="WHITE 8">
+     <Function ID="45"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="56174"/>
+     <WindowState Width="195" X="5" Y="285" Height="30" Visible="True"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="20" Caption="WHITE 9">
+     <Function ID="46"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="56174"/>
+     <WindowState Width="195" X="5" Y="320" Height="30" Visible="True"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="21" Caption="WHITE 10">
+     <Function ID="64"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="13792"/>
+     <WindowState Width="195" X="5" Y="355" Height="30" Visible="True"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="22" Caption="WHITE 11">
+     <Function ID="65"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="56174"/>
+     <WindowState Width="195" X="5" Y="390" Height="30" Visible="True"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="23" Caption="WHITE 12">
+     <Function ID="66"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="56174"/>
+     <WindowState Width="195" X="5" Y="425" Height="30" Visible="True"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+   </Frame>
+  </Frame>
+  <Properties>
+   <Size Width="1920" Height="1080"/>
+   <Keyboard TapModifier="67108864"/>
+   <GrandMaster SliderMode="Normal" ChannelMode="Intensity" ValueMode="Reduce"/>
+  </Properties>
+ </VirtualConsole>
+ <SimpleDesk>
+  <Engine/>
+ </SimpleDesk>
+</Workspace>
+
